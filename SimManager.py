@@ -11,8 +11,11 @@ class Main_Window():
         self.COUNTER = 0
         self.MAX_COUNTER = 10
         self.action_window = None
-        self.WINDOW_SIZE = [1200, 1200]
-        self.GRID_SIZE = [150,150]
+        self.WINDOW_SIZE = [800, 800]
+        
+        # refrance text file to grid sizeso that its saved per user #
+        
+        self.GRID_SIZE = [100,100]
         self.on_click_value = 1
 
         self.CELL_SIZE = [self.WINDOW_SIZE[0]// self.GRID_SIZE[0], self.WINDOW_SIZE[1]//self.GRID_SIZE[1]]

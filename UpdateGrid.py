@@ -32,7 +32,7 @@ def update_grid_normal(grid, GRID_SIZE):
     
     for i in range(GRID_SIZE[0]):
         for j in range(GRID_SIZE[1]):
-            new_grid[i,j] = gr.Simple.move_down(grid,i,j)
+            new_grid[i,j] = update_multi_rule (grid,i,j,alive= gr.Default.default(grid,i,j),dead= gr.Chess.knight(grid,i,j))
             #new_grid[i,j] = gr.Default.default(grid,i,j)
             
             
